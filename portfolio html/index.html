@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scal=1.0">
+	<title>Personal Portfolio Website - Easy Tutorials</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/ac89e8be32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container"> 
+		<nav>
+			<img src="images/logo.jpg" class="logo" height="100" width="700">
+			<ul id="sidemenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<p>Student</p>
+			<h1>Hi, I'm<span> Soundarya</span><br>Krishnamurthy From India</h1>
+		</div>
+	</div>
+</div>
+<!-- ------------about------------- -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/user.jpg">
+			</div>
+			<div class="about-col-2">
+				 <h1 class="sub-title">About Me</h1>
+				 <p>This is soundarya doing my 2nd year BCA at Shri Shankarlal Sundarbai Shasun Jain College for Womens. I am quite good at c++, java, html, css, python. I am quite fluent at english, tamil and beginner in french. And I got certification in software testing, web development. And I am an student coordinator in NSS club.</p>
+
+				 <div class="tab-titles">
+				 	<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+				 	<p class="tab-links" onclick="opentab('languages')">Languages</p>
+				 	<p class="tab-links" onclick="opentab('education')">Education</p>
+				 </div>
+				 <div class="tab-contents active-tab" id="skills">
+				 	<ul>
+				 		<li><span>c++</span><br>c++ codeing language</li>
+				 		<li><span>python</span><br>python codeing language</li>
+				 		<li><span>java</span><br>java codeing language</li>
+				 	</ul>
+				 </div>
+				 <div class="tab-contents" id="languages">
+				 	<ul>
+				 		<li><span>English</span><br>Proficient in english</li>
+				 		<li><span>Tamil</span><br>Proficient in tamil</li>
+				 		<li><span>French</span><br>Beginner in french</li>
+				 	</ul>
+				 </div>
+				 <div class="tab-contents" id="education">
+				 	<ul>
+				 		<li><span>HSC</span><br>ST.Savio MArticulation HR.Sec.School (Commerce with BM)</li>
+				 		<li><span>SSC</span><br>ST.Savio MArticulation HR.Sec.School</li>
+				 		<li><span>UG</span><br>SSS Shasun Jain College (BCA)</li>
+				 	</ul>
+				 </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- --------------about----------------- -->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>C++</h2>
+				<p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs. C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-python"></i>
+				<h2>Python</h2>
+				<p>Python is a computer programming language often used to build websites and software, automate tasks, and analyze data. Python is a general-purpose language, not specialized for any specific problems, and used to create various programmes.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-java"></i>
+				<h2>Java</h2>
+				<p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.</p>
+				<a href="#">Learn more</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- -------------porfolio----------------- -->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list"> 
+			<div class="work">
+				<img src="images/work-1.jpg">
+				<div class="layer">
+					<h3>C++ coding</h3>
+					<p>C++ is a a generic programming language for building software.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work-2.jpg">
+				<div class="layer">
+					<h3>Python coding</h3>
+					<p>Python is a high-level, general-purpose programming language.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work-3.jpg">
+				<div class="layer">
+					<h3>Java coding</h3>
+					<p>Java is a programming language and computing platform first released by Sun Microsystems in 1995.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn">See more</a>
+	</div>
+</div>
+<!-- --------contact------------ -->
+<div id="contact">
+    <div class="container">
+    	<div class="row">
+    		<div class="contact-left">
+    			<h1 class="sub-title">Contact Me</h1>
+    			<p><i class="fa-solid fa-paper-plane"></i>soundaryakrishnamurthy501@gmail.com</p>
+    			<p><i class="fa-solid fa-phone"></i>9789803170</p>
+    			<div class="social-icons">
+    				<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    				<a href="https://www.instagram.com/__soundarya_.krishnamurthy?igsh=MTRodXdzOHc2ZXB5Mg=="><i class="fa-brands fa-instagram"></i></a>
+    				<a href="https://www.linkedin.com/in/soundarya-krishnamurthy-873a702a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin"></i></a>	
+    			</div>
+    			<a href="images/my-cv.pdf" download class="btn btn2">Dowload CV</a>
+    		</div>
+    		<div class="contact-right">
+    			<form name="submit-to-google-sheet">
+    				<input type="text" name="Name" placeholder="Your Name" required>
+    				<input type="Email" name="email" placeholder="Your Email" required>
+    				<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+    				<button type="submit" class="btn btn2">Sumbit</button>
+    			</form>  
+    			<span id="meg"></span>  			
+    		</div>
+    	</div>
+    </div>	
+    <div class="copyright">
+    	<p>Copyright Soundarya. Made this portfolio <i class="fa-solid fa-address-card"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+	
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+      	for(tablink of tablinks){
+      		tablink.classList.remove("active-link");
+      	}
+      	for(tabcontent of tabcontents){
+      		tabcontent.classList.remove("active-tab");
+      	}
+      	event.currentTarget.classList.add("active-link");
+      	document.getElementById(tabname).classList.add("active-tab");
+      }
+
+</script>
+
+<script>
+	
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+     	sidemenu.style.right = "0";
+     }
+     function closemenu(){
+     	sidemenu.style.right = "-200px";
+     }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxWnlv0tj04FL9jJSTtCWi-z-FLPZ0SAIPbc1y8MukkZjGS9vyVdNV9NmGSEYA7p4Gs8w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("meg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	msg.innerHTML = "Message sent successfully"
+      	setTimeout(function(){
+      		msg.innerHTML = ""
+      	},5000)
+      	form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
